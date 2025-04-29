@@ -7,10 +7,7 @@ public class SistemaPrestamos {
         this.catalogo = catalogo;
     }
 
-    /**
-     * Realiza un préstamo de un libro buscándolo por ISBN.
-     * Lanza IllegalArgumentException si el libro no existe o ya está prestado.
-     */
+
     public Prestamo prestarLibro(String isbn) {
         Libro libro = catalogo.buscarPorIsbn(isbn);
         if (libro == null) {
